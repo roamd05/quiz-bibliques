@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Meta Pixel Code -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -13,12 +13,19 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1347456590565762');
 fbq('track', 'PageView');
-fbq('track', 'Puchasse');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1347456590565762&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2C799B0416"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2C799B0416');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Le Méga Pack de Quiz Bibliques | Afrique Éveil</title>
@@ -331,13 +338,13 @@ src="https://www.facebook.com/tr?id=1347456590565762&ev=PageView&noscript=1"
 <footer>
   © 2026 Afrique Éveil · Assistance WhatsApp : <a href="https://wa.me/22951866773">+229 51 86 67 73</a>
 </footer>
+
 <script>
 document.querySelectorAll('a.cta-btn, a.nav-cta').forEach(function(btn) {
   btn.addEventListener('click', function() {
-    fbq('track', 'InitiateCheckout');
+    if (typeof fbq === 'function') { fbq('track', 'InitiateCheckout'); }
   });
 });
 </script>
-  
 </body>
 </html>
